@@ -16,6 +16,7 @@ public class Calculator {
         System.out.println("2. Вычитание");
         System.out.println("3. Умножение");
         System.out.println("4. Деление");
+        System.out.println("5. четное число");
 
         int choice = scanner.nextInt();
         double result = 0;
@@ -33,6 +34,14 @@ public class Calculator {
             case 4:
                 result = divide(num1, num2);
                 break;
+
+            case 5:
+                System.out.println("введите число");
+                boolean answer = evenNumber(scanner.nextInt());
+                String text = answer ? "число четное" : "число не четное";
+                System.out.println(text);
+                return;
+
             default:
                 System.out.println("Неверный выбор операции.");
                 break;
@@ -56,4 +65,9 @@ public class Calculator {
     public static double divide(double num1, double num2) {
         return num1 / num2;
     }
+
+    public static boolean evenNumber(int num) {
+        return num % 2 == 0;
+    }
+
 }
