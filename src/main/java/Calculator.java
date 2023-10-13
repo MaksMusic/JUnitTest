@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Calculator {
@@ -63,6 +64,10 @@ public class Calculator {
     }
 
     public static double divide(double num1, double num2) {
+
+        if (num2 == 0){
+            throw new ArithmeticException("by zero");
+        }
         return num1 / num2;
     }
 
@@ -70,4 +75,7 @@ public class Calculator {
         return num % 2 == 0;
     }
 
+
+
 }
+
