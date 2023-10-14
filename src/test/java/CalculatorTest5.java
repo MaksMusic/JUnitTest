@@ -5,7 +5,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
-@DisplayName("класс для тестирование калькулятора")
+@DisplayName("calculator testing class")
 class CalculatorTest5 extends Calculator {
     private Calculator calculator;
 
@@ -35,14 +35,12 @@ class CalculatorTest5 extends Calculator {
     }
 
     @Test
-    @Tag("calculator")
     void testMultiply() {
         double result = calculator.multiply(7, 7);
         Assertions.assertEquals(49.0, result);
     }
 
     @Test
-    @Tag("calculator")
     void testDivide() {
         double result = calculator.divide(100, 5);
         Assertions.assertEquals(20.0, result);

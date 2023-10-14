@@ -5,7 +5,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
-@DisplayName("класс для тестирование калькулятора")
+@DisplayName("calculator testing class")
 class CalculatorTest6 extends Calculator {
     private Calculator calculator;
 
@@ -30,7 +30,7 @@ class CalculatorTest6 extends Calculator {
 
     @Test
     @Tag("calculator")
-    @DisplayName("тест метода вычитания")
+    @DisplayName("test method minus")
     void testMinus() {
         double result = calculator.minus(15, 5);
         Assertions.assertEquals(10.0, result);
