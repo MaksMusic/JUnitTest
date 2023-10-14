@@ -1,4 +1,4 @@
-# jUnit tests
+# JUnit tests
 
 ## Description
 calculator testing, methods and annotations
